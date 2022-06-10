@@ -1,0 +1,41 @@
+/* :host {
+    padding: 60px;
+} */
+
+.categories{
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+    margin: auto;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 30px;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.list-view-categories {
+  width: 70vw;
+  margin: auto;
+}
+.productCard {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.gridView {
+    flex: 0 1 21%;
+}
+
+.listView {
+    flex: 0 1 34%;
+    min-width: 30vw;
+}
+  
+  /* .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container {
+    padding: 2px 16px;
+  } */

@@ -1,0 +1,15 @@
+
+  <div #scrollContainer class="main-container">
+    <ng-container *ngFor="let dynamicDiv of arrayWithValues">
+      <div class="dynamic-div" key={dynamicDiv} >
+        <p>Div Id {{dynamicDiv}}</p>
+        <button class="btn" (click)="clickMe(dynamicDiv)">
+          Click me
+        </button>
+      </div>
+    </ng-container>
+  </div> 
+  
+
+
+

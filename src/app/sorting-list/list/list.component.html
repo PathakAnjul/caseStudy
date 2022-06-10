@@ -1,0 +1,14 @@
+<div class="main-container">
+    <table>
+      <tr>
+        <ng-container *ngFor="let column of headers">
+          <th (click)="sort(column)"><button>{{column}}</button></th>
+        </ng-container>
+      </tr>
+      <tr *ngFor="let row of tableData">
+        <ng-container *ngFor="let column of headers">
+          <td>{{row[column]}}</td>
+        </ng-container>
+      </tr>
+    </table>
+  </div>

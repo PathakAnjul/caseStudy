@@ -1,0 +1,31 @@
+.display-header {
+    text-align:center;
+    padding-top:6px;
+    color:white
+}
+
+.timer-display {
+    display: flex;
+    margin: auto;
+    padding-left: 18px;
+    width: 90%;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 90px;
+    background-color: white;
+    justify-content: space-around;
+}
+
+.timer-display span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 25%;
+    color: rgb(13, 42, 57);
+    font-size: 60px;
+}
+
+.timer-display span span {
+    font-size: small;
+    line-height: 3px;
+}

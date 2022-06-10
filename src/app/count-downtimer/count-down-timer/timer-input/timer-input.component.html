@@ -1,0 +1,42 @@
+<form [formGroup]="timerInputForm">
+    <div class="inputForm">
+        <div class="timerInputField">
+            <span>
+                <input type="number"  placeholder="00" id="daysInput" name="daysInput" formControlName="days">
+            </span>
+            <label for="daysInput">Days</label>
+        </div>
+        <div class="timerInputField">
+            <span>
+                <input type="number"   placeholder="00" id="hoursInput" name="hoursInput" formControlName="hours">
+            </span>
+            <label for="hoursInput">Hours</label>
+        </div>
+        <div class="timerInputField">
+            <span>
+                <input type="number"  placeholder="00" id="minutesInput" name="minutesInput" formControlName="minutes">
+            </span>
+            <label for="minutesInput">Minutes</label>
+        </div>
+        <div class="timerInputField">
+            <span>
+                <input type="number"  placeholder="00" id="secondsInput" name="secondsInput" formControlName="seconds">
+            </span>
+            <label for="secondsInput">Seconds</label>
+        </div>
+    </div>
+    <div class="errors">
+        <ng-container *ngFor="let control of timerInputForm.controls | keyvalue">
+            <p *ngIf="timerInputForm.get(control.key)?.errors">
+                Enter Valid Value for {{ control.key }}
+            </p>
+    </ng-container>
+    </div>
+
+
+
+    <button (click)="startOrPauseTimer(timerInputForm.value)" [disabled]="!(timerInputForm.status === 'VALID')">{{isTimerRunning ? 'PAUSE' : 'START'}}</button>
+    <button (click)="onReset(timerInputForm.value)">RESET</button>
+
+
+</form>

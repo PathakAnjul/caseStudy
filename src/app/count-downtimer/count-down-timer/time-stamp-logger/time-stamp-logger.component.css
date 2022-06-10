@@ -1,0 +1,9 @@
+h1, .logger {
+    color: white;
+    text-align: center;
+    padding-top: 6px;
+}
+
+.logger span {
+    display: block;
+}

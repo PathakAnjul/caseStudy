@@ -1,0 +1,15 @@
+<div class="action-btns">
+  <button #start  type="button">Start</button>
+  <button #pause type="button">Pause</button>
+  <button #reset type="button">Reset</button>
+</div>
+
+
+<ng-container *ngIf="intervalObs$ | async as clock; else default">
+  <div class="counter-display">
+    <span>{{clock | timeFormat}}</span>
+  </div>
+</ng-container>
+<ng-template #default><div class="counter-display">
+  <span>00:00:00</span>
+</div></ng-template>

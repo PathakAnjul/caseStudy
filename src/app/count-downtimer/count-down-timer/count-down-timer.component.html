@@ -1,0 +1,9 @@
+<div class="count-down-timer">
+    <app-timer-display (timerComplete)="onTimerComplete($event)"></app-timer-display>
+    
+    <app-timer-input (timerValue)="onTimerValue($event)" t
+    [isTimerRunning]="isTimerRunning"></app-timer-input>
+
+    <app-time-stamp-logger [actionButtonClicked]="actionButtonClicked"></app-time-stamp-logger>
+    <app-click-logger [actionButtonClicked]="actionButtonClicked"></app-click-logger>
+</div>

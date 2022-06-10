@@ -1,0 +1,19 @@
+<div class="header">
+    <div class="view-toggle">
+        <input type="radio" (change)="viewToggle($event)" id="listView" name="view-toggle" value="listView" checked/>
+		<label class="list" for="listView"><i class="fa fa-list"></i></label>
+		<input type="radio" (change)="viewToggle($event)" id="gridView" name="view-toggle" value="gridView" />
+		<label class="grid" for="gridView"><i class="fa fa-th-large"></i></label>
+    </div>
+    <div class="price-filter">
+        <select (change)="onPriceFilterChange($event)">
+            <option value="" selected disabled style="display: none">Price..</option>
+            <option value="0">All</option>
+            <option value="1">&#8377;1-100</option>
+            <option value="100">&#8377;100-500</option>
+            <option value="500">&#8377;500-1000</option>
+            <option value="1000">&#8377;1000-5000</option>
+            <option value="5000">More Than &#8377;5000</option>
+        </select>
+    </div>
+</div>

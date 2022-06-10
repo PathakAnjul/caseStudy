@@ -1,0 +1,8 @@
+<div id="header" class="header">
+    <h1>Select a Route to Proceed</h1>
+<button *ngFor="let route of routes" [routerLink]="route.path">{{ route.label }}</button>
+</div>
+<div style="height: calc(100% - 70px);padding-top: 24px;
+box-sizing: border-box;">
+    <router-outlet></router-outlet>
+</div>

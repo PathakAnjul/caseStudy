@@ -1,0 +1,17 @@
+.floater:before{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    content: '';
+}
+
+.floater div button {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}

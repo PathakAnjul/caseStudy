@@ -1,0 +1,13 @@
+<h1>Click Logger</h1>
+<button class="delete-log-btn" (click)="deleteLog()">Delete Log</button>
+<div class="logger">
+    <div id="start-counter">
+        <span id="start-clicks">{{ startCount }}</span>
+        <label for="start-clicks"> Times Started</label>
+    </div>
+
+    <div id="pause-counter">
+        <span id="pause-clicks">{{ pauseCount }}</span>
+        <label for="pause-clicks">Times Paused</label>
+    </div>
+</div>

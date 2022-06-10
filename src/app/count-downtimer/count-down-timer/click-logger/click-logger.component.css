@@ -1,0 +1,16 @@
+.logger {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 24px;
+}
+
+.delete-log-btn {
+    margin: 6px;
+}
+
+#start-counter span, #pause-counter span{
+    text-align: center;
+    display: block;
+    margin: 3px;
+}

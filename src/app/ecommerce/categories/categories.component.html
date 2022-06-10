@@ -1,0 +1,8 @@
+<app-ecommerce-header (priceFilterChange)="onPriceFilterChange($event)" (toggleLayout)="toggleLayout($event)"></app-ecommerce-header>
+<div class="categories" [ngClass]="{'list-view-categories' : layout=='listView'}">
+    <ng-container *ngFor = "let product of filteredProducts">
+        <div class="productCard" [ngClass]="layout">
+            <app-product-card [product]="product"></app-product-card>
+          </div>
+        </ng-container>
+</div>

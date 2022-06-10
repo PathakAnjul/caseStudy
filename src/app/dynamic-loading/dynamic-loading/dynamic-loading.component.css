@@ -1,0 +1,16 @@
+.dynamic-div{
+    height: 200px;
+    width: 200px;
+    border: 1px solid red ;
+    margin:5px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    margin:auto
+  }
+  
+  .btn{
+    padding: 5px;
+    margin: auto;
+  }
+  

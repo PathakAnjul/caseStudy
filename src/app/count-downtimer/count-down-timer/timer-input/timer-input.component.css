@@ -1,0 +1,46 @@
+:host {
+    display: flex;
+    align-items: center;
+}
+
+.inputForm, form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 12px;
+    color: white;
+}
+
+.timerInputField {
+    display: inline-block;
+    flex: 1 1 25%;
+    text-align: center;
+}
+
+.timerInputField span {
+    display: block;
+}
+
+.timerInputField span input {
+    width: 50%;
+    height: 30px;
+}
+
+form button {
+    margin: 6px;
+    color: rgb(13, 42, 57);
+    font-size: larger;
+    font-weight: 500;
+}
+
+.errors {
+    color: red;
+    font-size: small;
+    display: block;
+    flex-basis: 100%;
+}
+
+.errors p {
+    margin: 0;
+}

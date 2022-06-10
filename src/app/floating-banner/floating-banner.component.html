@@ -1,0 +1,20 @@
+<button style="display: block" (click)="showBanner=true">Show Banner</button>
+<div class="dummyDiv" style="background-color:aqua;">
+    <p>div1</p>
+</div>
+<div class="dummyDiv" style="background-color:red;">
+    <p>div1</p>
+</div>
+<div class="dummyDiv" style="background-color:blue;">
+    <p>div1</p>
+</div>
+<div class="dummyDiv" style="background-color:yellow;">
+    <p>div1</p>
+</div>
+<app-floater  (closeModal)="closeModal($event)" *ngIf="showBanner">
+    <div class="banner" appModalHighlight>
+        <p>this is a floating banner</p>
+        <p>with all other elements in the background</p>
+    </div>
+</app-floater>
+

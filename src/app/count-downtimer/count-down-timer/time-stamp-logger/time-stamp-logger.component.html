@@ -1,0 +1,5 @@
+<h1>Time Stamp Logger</h1>
+<button class="delete-log" (click)="deleteLog()">Delete Log</button>
+<div class="logger" >
+    <span *ngFor="let timeStamp of timeStampLog">Timer {{timeStamp.action}} at {{timeStamp.time | date:'dd-MM-yyyy hh:mm:ss a'}}</span>
+</div>

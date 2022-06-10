@@ -1,0 +1,23 @@
+
+  <div class="timer-input">
+    <label>
+        Hours
+        <input #hours type="number" min="0" max="59" placeholder="hours" 
+        [value]="counterSvc.getHours()" 
+        (change)="counterSvc.updateCounter(hours.value, 'hours')"/>
+      </label>
+      <label>
+        Minutes
+        <input #minutes type="number" min="0" max="59" placeholder="minutes" 
+        [value]="counterSvc.getMinutes()" 
+        (change)="counterSvc.updateCounter(minutes.value, 'minutes')"/>
+      </label>
+      <label>
+        Seconds
+        <input #seconds type="number" min="0" max="59" placeholder="seconds" 
+        [value]="counterSvc.getSeconds()" 
+        (change)="counterSvc.updateCounter(seconds.value, 'seconds')"/>
+      </label>
+  </div>
+
+  <app-actions class="count-actions"></app-actions>
